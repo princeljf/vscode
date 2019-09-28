@@ -1,0 +1,5 @@
+TARGETNAME=vsddk2
+TARGETTYPE=DRIVER
+
+SOURCES=stdafx.cpp \
+	vsddk2.cpp
