@@ -1,0 +1,5 @@
+TARGETNAME=test
+TARGETTYPE=DRIVER
+
+SOURCES=stdafx.cpp \
+	test.cpp

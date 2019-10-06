@@ -2,15 +2,15 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source files">
-      <UniqueIdentifier>{c509174e-1c07-42c1-a581-6314c48dfea2}</UniqueIdentifier>
+      <UniqueIdentifier>{7f285027-0098-4030-9827-2848d796db3e}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Resource files">
-      <UniqueIdentifier>{069ad1f9-9aca-46c7-86b3-f93303a8990c}</UniqueIdentifier>
+      <UniqueIdentifier>{d3ddd35f-f6e3-4e77-8f27-cebdfc196a5d}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="Header files">
-      <UniqueIdentifier>{3a706033-56bc-40cc-a7ec-82542dd7ed20}</UniqueIdentifier>
+      <UniqueIdentifier>{84aff888-d460-4d89-9bb1-20e2993608b2}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
   </ItemGroup>
@@ -26,13 +26,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="vsddk.cpp">
-      <Filter>Source files</Filter>
-    </ClCompile>
-    <ClCompile Include="vsddk2.cpp">
-      <Filter>Source files</Filter>
-    </ClCompile>
-    <ClCompile Include="zuishikonghuang.cpp">
+    <ClCompile Include="vsGame.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>

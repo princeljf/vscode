@@ -4,6 +4,12 @@ VOID DriverUnload(IN PDRIVER_OBJECT DriverObject);
 NTSTATUS IOManager(PDEVICE_OBJECT DeviceObject, PIRP Irp);
 NTSTATUS IODispatch(PDEVICE_OBJECT DeviceObject, PIRP Irp);
 
+
+// typedef struct _DEVICE_EXTENSION {
+// 	UNICODE_STRING SymLinkName;	//我们定义的设备扩展里只有一个符号链接名成员
+// } DEVICE_EXTENSION, *PDEVICE_EXTENSION;
+
+
 extern "C" NTSTATUS DriverEntry(IN PDRIVER_OBJECT DriverObject, IN PUNICODE_STRING RegistryPath);
 PCWSTR DEVICE = L"\\Device\\vsddk2";
 PCWSTR DOSDEVICE = L"\\DosDevices\\vsddk2";
@@ -13,6 +19,7 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)
 	UNICODE_STRING DeviceName;
 	UNICODE_STRING DosDeviceName;
 	NTSTATUS status;
+	//PDEVICE_EXTENSION pDevExt;
 
 	RtlInitUnicodeString(&DeviceName, DEVICE);
 	RtlInitUnicodeString(&DosDeviceName, DOSDEVICE);
@@ -24,6 +31,11 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)
 		IoDeleteDevice(DriverDeviceObject);
 		return STATUS_NO_SUCH_DEVICE;
 	}
+
+	//DriverDeviceObject->Flags |= DO_BUFFERED_IO;//将设备设置为缓冲I/O设备，关于缓冲I/O设备将会在以后的博文中讲
+	//pDevExt = (PDEVICE_EXTENSION)DriverDeviceObject->DeviceExtension;//得到设备扩展
+	//pDevExt->SymLinkName = DosDeviceName;
+
 	//同样我们也需要一个符号链接，不然会影响到驱动和应用层的通信
 	status = IoCreateSymbolicLink(&DosDeviceName, &DeviceName);
 	if (!NT_SUCCESS(status))

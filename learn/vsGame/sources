@@ -1,0 +1,5 @@
+TARGETNAME=vsGame
+TARGETTYPE=DRIVER
+
+SOURCES=stdafx.cpp \
+	vsGame.cpp

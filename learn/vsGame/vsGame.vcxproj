@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4697B52E-6E96-48FB-80FA-08659A015457}</ProjectGuid>
+    <ProjectGuid>{AA4F1BEA-491A-437C-B749-53B2B17F72B9}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -58,7 +58,7 @@ cd /d $(ProjectDir)
 build</NMakeReBuildCommandLine>
     <IntDir>$(ProjectDir)\objchk_win7_x86</IntDir>
     <OutDir>$(ProjectDir)\objchk_win7_x86</OutDir>
-    <NMakeOutput>$(ProjectDir)\objchk_win7_x86\i386\vsddk.sys</NMakeOutput>
+    <NMakeOutput>$(ProjectDir)\objchk_win7_x86\i386\vsGame.sys</NMakeOutput>
     <NMakePreprocessorDefinitions>WIN32;_CONSOLE;_X86_;_DDK_;_DEBUG;DBG=1;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeIncludeSearchPath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -73,7 +73,7 @@ cd /d $(ProjectDir)
 build</NMakeReBuildCommandLine>
     <IntDir>$(ProjectDir)\objfre_win7_x86</IntDir>
     <OutDir>$(ProjectDir)\objfre_win7_x86</OutDir>
-    <NMakeOutput>$(ProjectDir)\objfre_win7_x86\i386\vsddk.sys</NMakeOutput>
+    <NMakeOutput>$(ProjectDir)\objfre_win7_x86\i386\vsGame.sys</NMakeOutput>
     <NMakePreprocessorDefinitions>WIN32;_CONSOLE;_X86_;_DDK_;_NDEBUG;DBG=0;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeIncludeSearchPath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -88,7 +88,7 @@ cd /d $(ProjectDir)
 build</NMakeReBuildCommandLine>
     <IntDir>$(ProjectDir)\objchk_win7_amd64</IntDir>
     <OutDir>$(ProjectDir)\objchk_win7_amd64</OutDir>
-    <NMakeOutput>$(ProjectDir)\objchk_win7_amd64\amd64\vsddk.sys</NMakeOutput>
+    <NMakeOutput>$(ProjectDir)\objchk_win7_amd64\amd64\vsGame.sys</NMakeOutput>
     <NMakePreprocessorDefinitions>WIN32;_CONSOLE;_AMD64_;_DDK_;_DEBUG;DBG=1;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeIncludeSearchPath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -103,7 +103,7 @@ cd /d $(ProjectDir)
 build</NMakeReBuildCommandLine>
     <IntDir>$(ProjectDir)\objfre_win7_amd64</IntDir>
     <OutDir>$(ProjectDir)\objfre_win7_amd64</OutDir>
-    <NMakeOutput>$(ProjectDir)\objfre_win7_amd64\amd64\vsddk.sys</NMakeOutput>
+    <NMakeOutput>$(ProjectDir)\objfre_win7_amd64\amd64\vsGame.sys</NMakeOutput>
     <NMakePreprocessorDefinitions>WIN32;_CONSOLE;_AMD64_;_DDK_;_NDEBUG;DBG=0;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeIncludeSearchPath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -114,10 +114,8 @@ build</NMakeReBuildCommandLine>
     <ClInclude Include="VisualDDKHelpers.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zuishikonghuang.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="vsddk.cpp" />
-    <ClCompile Include="vsddk2.cpp" />
+    <ClCompile Include="vsGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ProjectDir)\sources" />

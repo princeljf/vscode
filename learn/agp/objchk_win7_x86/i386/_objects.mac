@@ -2,7 +2,7 @@
 
 386_OBJECTS=\
  $(OBJ_PATH)\$O\stdafx.obj \
- $(OBJ_PATH)\$O\zuishikonghuang.obj \
+ $(OBJ_PATH)\$O\test.obj \
 
 
 
@@ -11,7 +11,7 @@
 # lowercased
 BASEDIR=d:\winddk\7600.16385.1
 OBJECT_ROOT=d:\winddk\7600.16385.1
-MAKEDIR_LOWERCASE=g:\vscode\vsddk\vsddk
-OBJ_PATH=g:\vscode\vsddk\vsddk
+MAKEDIR_LOWERCASE=g:\vscode\learn\agp
+OBJ_PATH=g:\vscode\learn\agp
 CONCURRENT_MIDL=0
 CONCURRENT_MANIFEST_BUILD=0

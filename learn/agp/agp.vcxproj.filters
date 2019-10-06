@@ -2,15 +2,15 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source files">
-      <UniqueIdentifier>{c509174e-1c07-42c1-a581-6314c48dfea2}</UniqueIdentifier>
+      <UniqueIdentifier>{3378e54f-4421-403c-b211-d54bd8eecd1e}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Resource files">
-      <UniqueIdentifier>{069ad1f9-9aca-46c7-86b3-f93303a8990c}</UniqueIdentifier>
+      <UniqueIdentifier>{9770105b-d744-4483-a785-f6face78edc2}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="Header files">
-      <UniqueIdentifier>{3a706033-56bc-40cc-a7ec-82542dd7ed20}</UniqueIdentifier>
+      <UniqueIdentifier>{3546e4f8-c528-419d-84d3-ed55bd3044c3}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
   </ItemGroup>
@@ -21,18 +21,30 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header files</Filter>
     </ClInclude>
+    <ClInclude Include="SSDT.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="vsddk.cpp">
+    <ClCompile Include="agp.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="vsddk2.cpp">
+    <ClCompile Include="base01.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="zuishikonghuang.cpp">
+    <ClCompile Include="baseIo.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="SSDT.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>

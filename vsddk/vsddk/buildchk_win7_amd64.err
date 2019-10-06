@@ -1,0 +1,5 @@
+1>errors in directory g:\vscode\vsddk\vsddk
+1>g:\vscode\vsddk\vsddk\vsddk2.cpp(28) : error C2065: 'pDevExt' : undeclared identifier
+1>g:\vscode\vsddk\vsddk\vsddk2.cpp(28) : error C2065: 'PDEVICE_EXTENSION' : undeclared identifier
+1>g:\vscode\vsddk\vsddk\vsddk2.cpp(28) : error C2146: syntax error : missing ';' before identifier 'DriverDeviceObject'
+1>link : error LNK1181: cannot open input file 'g:\vscode\vsddk\vsddk\objchk_win7_amd64\amd64\vsddk2.obj'
